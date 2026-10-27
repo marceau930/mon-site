@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(10, 10, 15, 0.75), rgba(10, 10, 15, 0.9)),
+        url("fond.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 55px 15px 35px;
+}
+
+.sous-titre {
+    color: #e8c65a;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 15px 0;
+    color: #ffffff;
+    text-shadow: 0 3px 15px #000000;
+}
+
+.description {
+    color: #dddddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #e8c65a;
+    font-size: 28px;
+    margin: 20px 0 30px;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(25, 25, 30, 0.92);
+    color: white;
+    padding: 30px 20px;
+    border: 1px solid #55504a;
+    border-radius: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icone {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.carte h3 {
+    color: #e8c65a;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.carte p {
+    color: #dddddd;
+    line-height: 1.6;
+    margin: 5px 0 20px;
+}
+
+.decouvrir {
+    display: inline-block;
+    margin-top: auto;
+    background-color: #e8c65a;
+    color: #171717;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-7px);
+    border-color: #e8c65a;
+    background-color: rgba(45, 42, 35, 0.97);
+    box-shadow: 0 10px 25px #00000066;
+}
+
+.carte:hover .decouvrir {
+    background-color: white;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    color: #cccccc;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+        background-attachment: scroll;
+    }
+
+    header {
+        padding: 35px 5px 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .sous-titre {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .cartes {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .carte {
+        padding: 25px 15px;
+    }
+
+    .icone {
+        font-size: 38px;
+    }
+
+    .carte h3 {
+        font-size: 20px;
+    }
+}

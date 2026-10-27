@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les légendes des échecs, les grands champions et l'histoire du jeu.">
+    <title>Échecs | Les légendes</title>
+    <link rel="stylesheet" href="echec.css">
+    <script src="echec.js" defer></script>
+</head>
+<body>
+
+    <header class="entete">
+        <a href="index.html" class="logo">ÉCHECS<span>.</span></a>
+
+        <nav class="menu">
+            <a href="#accueil">Accueil</a>
+            <a href="#joueurs">Les légendes</a>
+            <a href="#histoire">Chronologie</a>
+            <a href="#competitions">Compétitions</a>
+        </nav>
+
+        <a href="index.html" class="bouton-retour">← Retour à l'accueil</a>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-contenu">
+                <p class="surtitre">STRATÉGIE · INTELLIGENCE · HISTOIRE</p>
+                <h1>L'art de penser<br><span>plusieurs coups</span> à l'avance.</h1>
+                <p class="introduction">
+                    Des premières grandes confrontations aux champions modernes,
+                    découvrez les joueurs qui ont marqué l'histoire des échecs.
+                </p>
+                <a href="#joueurs" class="bouton-principal">Découvrir les légendes ↓</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?auto=format&fit=crop&w=1200&q=85"
+                    alt="Échiquier et pièces d'échecs"
+                >
+                <div class="image-legende">UN JEU. UNE INFINITÉ DE POSSIBILITÉS.</div>
+            </div>
+        </section>
+
+        <section class="section-joueurs" id="joueurs">
+            <div class="titre-section">
+                <p class="surtitre">LES MAÎTRES DU JEU</p>
+                <h2>8 légendes des <span>échecs</span></h2>
+                <p>
+                    Des styles différents, des parties inoubliables et des carrières
+                    exceptionnelles.
+                </p>
+            </div>
+
+            <div class="grille-joueurs" id="liste-joueurs"></div>
+        </section>
+
+        <section class="section-histoire" id="histoire">
+            <div class="titre-section">
+                <p class="surtitre">DU XIXe SIÈCLE À AUJOURD'HUI</p>
+                <h2>Une histoire <span>stratégique</span></h2>
+                <p>Les grandes dates qui ont façonné les échecs modernes.</p>
+            </div>
+
+            <div class="frise">
+                <article class="evenement">
+                    <div class="frise-date">1851</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">01 / ORIGINES MODERNES</span>
+                        <h3>Le premier grand tournoi international</h3>
+                        <p>
+                            Londres accueille un tournoi majeur qui contribue
+                            au développement des compétitions internationales.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">1886</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">02 / CHAMPIONNAT DU MONDE</span>
+                        <h3>Wilhelm Steinitz entre dans l'histoire</h3>
+                        <p>
+                            Steinitz bat Johannes Zukertort et devient le premier
+                            champion du monde généralement reconnu.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">1924</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">03 / ORGANISATION</span>
+                        <h3>Création de la FIDE</h3>
+                        <p>
+                            La Fédération internationale des échecs est fondée
+                            à Paris pour organiser et coordonner le jeu à l'échelle mondiale.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">1972</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">04 / LE MATCH DU SIÈCLE</span>
+                        <h3>Fischer contre Spassky</h3>
+                        <p>
+                            À Reykjavik, Bobby Fischer remporte le championnat du monde
+                            face à Boris Spassky dans un duel suivi partout dans le monde.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">1985</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">05 / NOUVELLE GÉNÉRATION</span>
+                        <h3>Kasparov devient champion</h3>
+                        <p>
+                            Garry Kasparov bat Anatoly Karpov et devient, à 22 ans,
+                            le plus jeune champion du monde de l'époque.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">1997</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">06 / HOMME CONTRE MACHINE</span>
+                        <h3>Deep Blue bat Kasparov</h3>
+                        <p>
+                            L'ordinateur d'IBM remporte un match contre le champion
+                            du monde en titre, étape marquante de l'histoire de l'IA.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">2013</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">07 / ÈRE MODERNE</span>
+                        <h3>Magnus Carlsen devient champion</h3>
+                        <p>
+                            Le Norvégien bat Viswanathan Anand et ouvre une nouvelle
+                            période de domination au plus haut niveau.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="evenement">
+                    <div class="frise-date">2024</div>
+                    <div class="frise-point"></div>
+                    <div class="frise-carte">
+                        <span class="numero">08 / NOUVEAU CHAMPION</span>
+                        <h3>Gukesh entre dans l'histoire</h3>
+                        <p>
+                            À 18 ans, Dommaraju Gukesh remporte le championnat du monde
+                            classique face à Ding Liren.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-competitions" id="competitions">
+            <div class="titre-section">
+                <p class="surtitre">LES RENDEZ-VOUS MAJEURS</p>
+                <h2>Les grandes <span>compétitions</span></h2>
+                <p>Les tournois et les titres qui font vibrer le monde des échecs.</p>
+            </div>
+
+            <div class="grille-competitions">
+                <article class="competition">
+                    <div class="competition-icone">♔</div>
+                    <p class="numero">01 — LE TITRE SUPRÊME</p>
+                    <h3>Championnat du monde</h3>
+                    <p>
+                        Un duel au sommet pour déterminer le champion du monde
+                        d'échecs classiques.
+                    </p>
+                </article>
+
+                <article class="competition">
+                    <div class="competition-icone">♞</div>
+                    <p class="numero">02 — L'ÉLITE MONDIALE</p>
+                    <h3>Tournoi des candidats</h3>
+                    <p>
+                        Une compétition décisive dont le vainqueur obtient le droit
+                        de défier le champion du monde.
+                    </p>
+                </article>
+
+                <article class="competition">
+                    <div class="competition-icone">♜</div>
+                    <p class="numero">03 — PAR ÉQUIPES</p>
+                    <h3>Les Olympiades d'échecs</h3>
+                    <p>
+                        Des équipes nationales se rencontrent lors d'une grande
+                        compétition internationale organisée par la FIDE.
+                    </p>
+                </article>
+
+                <article class="competition">
+                    <div class="competition-icone">♛</div>
+                    <p class="numero">04 — VITESSE ET PRÉCISION</p>
+                    <h3>Rapide et blitz</h3>
+                    <p>
+                        Des parties plus courtes où le calcul, l'intuition et la
+                        gestion du temps deviennent essentiels.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="citation">
+            <span class="guillemet">“</span>
+            <p>Aux échecs, chaque coup ouvre une nouvelle possibilité.</p>
+            <span class="citation-bas">L'ESPRIT DES ÉCHECS</span>
+        </section>
+    </main>
+
+    <footer class="pied-page">
+        <a href="#accueil" class="logo">ÉCHECS<span>.</span></a>
+        <p>Un voyage à travers les légendes et l'histoire des échecs.</p>
+        <a href="index.html" class="lien-accueil">← Retour à l'accueil</a>
+        <p class="copyright">© 2026 — Site consacré à l'histoire des échecs</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Légendes du Tennis</title>
+    <link rel="stylesheet" href="tennis.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Les Légendes du Tennis</h1>
+        <p>Découvrez les plus grands joueurs et joueuses de tennis.</p>
+
+    </header>
+
+    <nav>
+        <button class="filtre" data-genre="tous">Tous les joueurs</button>
+        <button class="filtre" data-genre="homme">Hommes</button>
+        <button class="filtre" data-genre="femme">Femmes</button>
+    </nav>
+
+
+    <main>
+        <h2>🏆 Les champions du Grand Chelem</h2>
+        <p>Survolez une carte pour découvrir son palmarès.</p>
+
+        <div id="classement"></div>
+    </main>
+
+<section class="classement-atp">
+    <h2>Classement ATP en direct</h2>
+    <p>Retrouve les meilleurs joueurs de tennis.</p>
+
+    <iframe
+        src="https://tennisbubbles.net/embed/ranking/?tour=atp&formato=lateral&tema=oscuro"
+        title="Classement ATP"
+        width="100%"
+        height="500"
+        loading="lazy">
+    </iframe>
+
+    <a href="https://www.atptour.com/rankings/singles/live" target="_blank">
+        Voir le classement officiel ATP
+    </a>
+</section>
+
+
+    <footer>
+        <p> Le tennis, une histoire de légendes !</p>
+
+    <a href="index.html" class="retour-accueil"></a>
+    retour-accueil
+</footer>
+</body>
+  
+
+    <script src="tennis.js"></script>
+
+</body>
+</html>

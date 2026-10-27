@@ -1,0 +1,348 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eaf3e5;
+    color: #183d27;
+}
+
+header {
+    background: linear-gradient(135deg, #064d2c, #16834b);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 22px 0 12px;
+}
+
+header p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.retour {
+    display: inline-block;
+    background: #e5c84b;
+    color: #183d27;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 8px #00000012;
+}
+
+nav a {
+    text-decoration: none;
+    color: #14532d;
+    background: #eaf3e5;
+    padding: 11px 17px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #e5c84b;
+}
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    padding: 30px 0 45px;
+    scroll-margin-top: 90px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.introduction {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    color: #45634c;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.carte {
+    height: 370px;
+    perspective: 1000px;
+}
+
+.carte-interieur {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.carte.retournee .carte-interieur {
+    transform: rotateY(180deg);
+}
+
+.recto,
+.verso {
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.recto {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo {
+    position: relative;
+    height: 220px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #b9d5a8, #e5c84b);
+}
+
+.photo-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: none;
+}
+
+.infos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 12px 13px;
+}
+
+.infos h3 {
+    font-size: 19px;
+    margin: 4px 0 7px;
+}
+
+.infos p {
+    margin: 4px 0 10px;
+    color: #45634c;
+    font-size: 14px;
+}
+
+.bouton-carte {
+    border: none;
+    background: #e5c84b;
+    color: #183d27;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.bouton-carte:hover {
+    background: #f4df83;
+}
+
+.verso {
+    transform: rotateY(180deg);
+    background: #126139;
+    color: white;
+    padding: 23px 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.verso h3 {
+    font-size: 21px;
+    color: #f5d95b;
+    margin: 5px 0 15px;
+}
+
+.verso p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.verso .bouton-carte {
+    margin-top: auto;
+}
+
+.carte-simple {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #00000015;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-simple .photo {
+    height: 175px;
+    width: 100%;
+}
+
+.carte-simple .description {
+    padding: 18px;
+    flex: 1;
+}
+
+.carte-simple h3 {
+    margin-top: 0;
+    color: #126139;
+    font-size: 20px;
+}
+
+.carte-simple p {
+    line-height: 1.65;
+    color: #45634c;
+    font-size: 14px;
+}
+
+.categorie {
+    display: inline-block;
+    background: #eaf3e5;
+    color: #14532d;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer {
+    background: #064d2c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #f5d95b;
+}
+
+@media (max-width: 550px) {
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .grille {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .carte {
+        height: 345px;
+    }
+
+    .photo {
+        height: 175px;
+    }
+
+    .infos {
+        padding: 8px;
+    }
+
+    .infos h3 {
+        font-size: 15px;
+    }
+
+    .infos p {
+        font-size: 12px;
+    }
+
+    .verso {
+        padding: 15px 10px;
+    }
+
+    .verso h3 {
+        font-size: 17px;
+    }
+
+    .verso p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .bouton-carte {
+        padding: 9px 10px;
+        font-size: 12px;
+    }
+
+    .carte-simple .photo {
+        height: 130px;
+    }
+
+    .carte-simple .description {
+        padding: 12px;
+    }
+
+    .carte-simple h3 {
+        font-size: 16px;
+    }
+
+    .carte-simple p {
+        font-size: 13px;
+    }
+}
